@@ -8,9 +8,10 @@ import {
 import { useField } from '@unform/core';
 
 import { Container } from './styles';
+import React from 'react';
 
-const Input = ({ name, icon: Icon, ...rest }) => {
-  const inputRef = useRef(null);
+const Input: React.FC<any> = ({ name, icon: Icon, ...rest }) => {
+  const inputRef = useRef<any>(null);
 
   const [isFocused, setIsFocused] = useState(false);
   const [isFilled, setIsFilled] = useState(false);
